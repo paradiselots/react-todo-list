@@ -9,7 +9,7 @@ const Counter = () => {
 
   // Functions to handle button click and update the count
   const incrementCount = () => {
-    if (count >= 100) {
+    if (count >= 25) {
       setCount(0);
     } else {
       setCount(count + 1);
@@ -24,20 +24,20 @@ const Counter = () => {
     setCount(0);
   };
 
-  const multiplyBy10 = () => {
-    if (count >= 100) {
-      setCount(0);
-    } else {
-      setCount(count * 10);
-    }
-  };
+  // const multiplyBy10 = () => {
+  //   if (count >= 100) {
+  //     setCount(0);
+  //   } else {
+  //     setCount(count * 10);
+  //   }
+  // };
 
   return (
     <div className='counter'>
       <p>Count: {count}</p>
       <button onClick={incrementCount}>Increment</button>
     <button onClick={decrementCount}>Decrement</button>
-    <button onClick={multiplyBy10}>Multiply by 10</button>
+    {/* <button onClick={multiplyBy10}>Multiply by 10</button> */}
     <button onClick={resetButton} className="reset">Reset</button>
     </div>
   );

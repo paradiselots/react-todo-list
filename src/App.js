@@ -3,6 +3,7 @@ import './App.css';
 import Counter from './Components/Counter/Counter';
 import Calculator from './Components/Calculator/Calculator';
 import Todo from './Components/To-do-list/todo';
+import WeatherApp from './Components/WeatherApp/WeatherApp';
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
       <hr></hr>
       <br></br>
       <Todo />
+      <br></br>
+      <hr></hr>
+      <br></br>
+      <WeatherApp />
     </div>
   );
 }
