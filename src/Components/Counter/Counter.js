@@ -36,9 +36,9 @@ const Counter = () => {
     <div className='counter'>
       <p>Count: {count}</p>
       <button onClick={incrementCount}>Increment</button>
-      <button onClick={decrementCount}>Decrement</button>
-      <button onClick={multiplyBy10}>Multiply by 10</button>
-      <button onClick={resetButton}>Reset</button>
+    <button onClick={decrementCount}>Decrement</button>
+    <button onClick={multiplyBy10}>Multiply by 10</button>
+    <button onClick={resetButton} className="reset">Reset</button>
     </div>
   );
 };
